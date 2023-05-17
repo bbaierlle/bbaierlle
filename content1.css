@@ -1,0 +1,53 @@
+/* ------------------Conteudo Home --------------------*/
+.corpoHome {
+    width: 100%;
+    height: 100vh;
+    background-color: #271655;
+    display: flex;
+    justify-content: center;
+    overflow-y: h;
+}
+
+.folhaD, .folhaE, .plateia, .imgCeu {
+    position: absolute;
+    transition: .65s;
+    bottom: 0;
+}
+.folhaD, .folhaE, .plateia {
+    z-index: 3;
+}
+.folhaD {
+    right: 0;
+    height: 250px;
+    opacity: 0;
+}
+.folhaE {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left: 0;
+    height: 200px;
+    opacity: 0;
+}
+.plateia {
+    opacity: 0;
+    transition: .65s;
+}
+/* --------------------- Box Home ----------------------*/
+.corpoHomeBox {
+    width: 60vw;
+    height: 65vh;
+    align-self: center;
+    z-index: 2;
+    border-radius: 7.5px;
+    transition: 1s;
+    opacity: 0;
+    background-image: url(asset/img/LogoFestHome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    display: flex;
+}
+.imgFestival {
+    width: 100%;
+    height: 100%;
+}

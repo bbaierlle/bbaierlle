@@ -1,0 +1,19 @@
+/* Logo animation */
+.logoAnimation {
+    position: absolute;
+}
+.auxLogo {
+    transition: .65s;
+    opacity: 100%;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #271655;
+}
+#logo {
+    transition: 1s;
+    z-index: 1;
+    width: 90vw;
+    height: 90vh;
+    align-self: center;
+}

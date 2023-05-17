@@ -1,0 +1,83 @@
+/* ------------------- Barra de Navegação --------------------- */
+.containerMenu {
+    opacity: 0;
+    padding: 5px;
+    font-family: 'Poppins';
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 4;
+}
+/* Logo da Barra de navegação */
+
+.logoNav {
+    border-radius: 5px;
+    position: relative;
+    transform: translateY(-120px);
+    transition: 0.65s;
+    margin: 5px 0 0 0;
+}
+
+.logoNav img {
+    height: 150px;
+    width: 125px;
+    background-color: transparent;
+}
+
+/* Links da barra de navegação */
+.linksNav {
+    height: 90%;
+    width: auto;
+    display: flex;
+    background: #ffffff33;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px #0000006c;
+    z-index: -1;
+    transition: .65s;
+}
+.linksNav a {
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #f1f1f1;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: .3s;
+    opacity: 0.6;
+}
+.linksNav a:hover {
+    opacity: 1;
+}
+.linksNav ul {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+.btnJoin {
+    display: flex;
+    height: 50%;
+    width: 90px;
+    align-self: center;
+}
+.btnJoin button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px #0000006e;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    transition: .3s;
+}
+.btnJoin button:hover {
+    color: #f1f1f1;
+    background-color: rgb(94, 25, 94);
+}
