@@ -51,3 +51,41 @@ var animation = bodymovin.loadAnimation({
     loop: false,
     autoplay: true,
     })
+
+
+
+
+
+    window.addEventListener('scroll', () => {
+    
+        let scrollPos = 0;
+        const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+    
+        if (currentScrollPos > scrollPos) {
+            // Scroll para baixo
+            console.log('Rolagem para baixo');
+    
+            setTimeout(function(){
+                var navM = document.querySelector('#containerMenu');
+    
+                navM.style.opacity = '0%';
+    
+            }) 
+    
+    
+          } else {
+            // Scroll para cima
+            console.log('Rolagem para cima');
+    
+            setTimeout(function(){
+                var navM = document.querySelector('#containerMenu');
+    
+                navM.style.opacity = '100%';
+                
+            }) 
+          }
+        
+          // Atualiza a posição anterior do scroll
+          scrollPos = currentScrollPos;
+    
+      });

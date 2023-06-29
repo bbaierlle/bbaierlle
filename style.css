@@ -8,12 +8,13 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 
 /* ------------------Conteudo 2 --------------------*/
 .conteudo2 {
-    width: 100%;
+    width: 100vw;
     height: 97vh;
     background-color: #322557;
 }

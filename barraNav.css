@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 15vh;
+    height: 13vh;
     justify-content: space-around;
     align-items: center;
     z-index: 4;
@@ -34,7 +34,7 @@
     width: auto;
     display: flex;
     background: #ffffff33;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(3px);
     border-radius: 25px;
     box-shadow: 3px 3px 5px #0000006c;

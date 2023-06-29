@@ -1,11 +1,11 @@
 /* ------------------Conteudo Home --------------------*/
 .corpoHome {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #271655;
     display: flex;
     justify-content: center;
-    overflow-y: h;
+    overflow-y: hidden;
 }
 
 .folhaD, .folhaE, .plateia, .imgCeu {
@@ -17,7 +17,7 @@
     z-index: 3;
 }
 .folhaD {
-    right: 0;
+    right: -15px;
     height: 250px;
     opacity: 0;
 }
@@ -31,6 +31,8 @@
 .plateia {
     opacity: 0;
     transition: .65s;
+    bottom: -5px;
+    
 }
 /* --------------------- Box Home ----------------------*/
 .corpoHomeBox {
@@ -50,4 +52,55 @@
 .imgFestival {
     width: 100%;
     height: 100%;
+}
+
+/* --------------------- ingressos ----------------------*/
+
+.infoFest {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0d0125;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+}
+.caixaIngressos {
+    padding: 15px;
+    width: 80%;
+    height: 90%;
+    background: #ffffff33;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 15px 15px; 
+    grid-template-areas: 
+    "ingresso1 ingresso2"
+    "ingresso1 ingresso3"; 
+}
+
+.ingressos {
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.ingressos button {
+    cursor: pointer;
+}
+
+.ingresso1 {
+    background-color: #0d0125;
+    grid-area: ingresso1;
+}
+.ingresso2 {
+    background-color: #0d0125;
+    grid-area: ingresso2;
+}
+.ingresso3 {
+    background-color: #0d0125;
+    grid-area: ingresso3;
 }
